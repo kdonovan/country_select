@@ -10,6 +10,11 @@ This plugin has been changed to provide database support, saving the id instead 
 Usage
 =====
 
+Create a model named `Country` (app/models/country.rb):
+
+	class Country < ActiveRecord::Base
+	end
+
 To create the `countries` table and import all countries run the rake task:
 
 	rake countries:setup
